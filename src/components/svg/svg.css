@@ -1,0 +1,11 @@
+@import "../../styles/variables.css";
+
+svg {
+  width: 25px;
+  height: 25px;
+}
+
+.svg-arrow {
+  width: 20px;
+  height: 30px;
+}

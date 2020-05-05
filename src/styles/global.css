@@ -1,0 +1,139 @@
+@import "./variables.css";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  overflow-y: scroll;
+  &.no-scroll {
+    touch-action: none;
+    width: 100%;
+    overflow-y: hidden;
+    body {
+      touch-action: none;
+    }
+  }
+}
+:root {
+  --contact-height: 0px;
+}
+.gray {
+  background-color: var(--color-gray);
+}
+.green {
+  background-color: var(--color-green-60);
+}
+.yellow {
+  background-color: var(--color-yellow-60);
+}
+.red {
+  background-color: var(--color-red-60);
+}
+.blue {
+  background-color: var(--color-blue-60);
+}
+.purple {
+  background-color: var(--color-purple-60);
+}
+.black {
+  background-color: var(--color-black-60);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.site-wrapper {
+  width: 100%;
+  min-height: 100vh;
+
+  /* flexbox fallback for IE-11 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 80px auto auto;
+}
+
+header {
+  grid-column: span 12;
+}
+main {
+  grid-column: span 12;
+  height: auto;
+}
+footer {
+  grid-column: span 12;
+}
+
+section {
+  /* margin-top: var(--margin-site-mobile);
+  @media (--mq-sm) {
+    margin-top: var(--margin-site-desktop);
+  } */
+  &.container-fluid {
+    margin: 0;
+    display: flex;
+    @media (--mq-sm) {
+      margin: 0;
+    }
+  }
+}
+
+img {
+  border: 0;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.secundary-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 2px;
+    width: 0;
+    transition: width 0.15s ease-in;
+    background-color: var(--color-black);
+  }
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.link-separator {
+  margin: 0 10px;
+}
+
+blockquote {
+  font-size: 50px;
+  margin: 60px 0 15px;
+  position: relative;
+  padding-left: 20px;
+  line-height: 54px;
+  &::before {
+    content: "\275B";
+    font-size: 45px;
+    position: absolute;
+    left: 0;
+  }
+}
+
+.quote-name {
+  opacity: 0.5;
+}

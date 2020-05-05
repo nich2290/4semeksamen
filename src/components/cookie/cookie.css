@@ -1,0 +1,258 @@
+body {
+  #CybotCookiebotDialog * {
+    font-family: var(--font-regular);
+    font-size: var(--font-size-small);
+    line-height: var(--font-lineheight-body);
+    a#CybotCookiebotDialogBodyLevelButtonAccept {
+      background-color: transparent;
+      border-color: var(--color-black);
+      color: var(--color-black);
+      &:hover {
+        background-color: var(--color-black-60);
+      }
+    }
+    #CybotCookiebotDialogBodyLevelButtonsSelectPane {
+      border-color: var(--color-black);
+      color: var(--color-black);
+    }
+    #CybotCookiebotDialogBodyLevelDetailsWrapper {
+      background-color: transparent;
+      border-color: var(--color-black);
+      color: var(--color-black);
+    }
+  }
+}
+
+#CybotCookiebotDialog,
+#CybotCookiebotDialogDetail {
+  .gray & {
+    background-color: var(--color-gray);
+  }
+  .green & {
+    background-color: var(--color-green);
+  }
+  .yellow & {
+    background-color: var(--color-yellow-60);
+  }
+  .red & {
+    background-color: var(--color-red-60);
+  }
+  .blue & {
+    background-color: var(--color-blue-60);
+  }
+  .purple & {
+    background-color: var(--color-purple-60);
+  }
+  .black & {
+    background-color: var(--color-black-60);
+  }
+  .white & {
+    background-color: var(--color-blue-60);
+  }
+}
+
+.coi-save-btn:hover,
+.coi-accept-btn:hover {
+  .gray & {
+    background-color: var(--color-gray);
+    color: var(--color-black);
+  }
+  .green & {
+    background-color: var(--color-green);
+    color: var(--color-black);
+  }
+  .yellow & {
+    background-color: var(--color-yellow-60);
+    color: var(--color-black);
+  }
+  .red & {
+    background-color: var(--color-red-60);
+    color: var(--color-black);
+  }
+  .blue & {
+    background-color: var(--color-blue-60);
+    color: var(--color-black);
+  }
+  .purple & {
+    background-color: var(--color-purple-60);
+    color: var(--color-black);
+  }
+  .black & {
+    background-color: var(--color-black-60);
+    color: var(--color-gray);
+  }
+}
+
+.coi-main-controls span {
+  .gray & {
+    background-color: var(--color-gray);
+  }
+  .green & {
+    background-color: var(--color-green);
+  }
+  .yellow & {
+    background-color: var(--color-yellow-60);
+  }
+  .red & {
+    background-color: var(--color-red-60);
+  }
+  .blue & {
+    background-color: var(--color-blue-60);
+  }
+  .purple & {
+    background-color: var(--color-purple-60);
+  }
+  .black & {
+    background-color: var(--color-black-60);
+  }
+}
+.coi-main-controls span:hover {
+  .gray & {
+    background-color: var(--color-gray);
+    border-color: var(--color-gray);
+  }
+  .green & {
+    background-color: var(--color-green);
+    border-color: var(--color-green);
+  }
+  .yellow & {
+    background-color: var(--color-yellow-60);
+    border-color: var(--color-yellow-60);
+  }
+  .red & {
+    background-color: var(--color-red-60);
+    border-color: var(--color-red-60);
+  }
+  .blue & {
+    background-color: var(--color-blue-60);
+    border-color: var(--color-blue-60);
+  }
+  .purple & {
+    background-color: var(--color-purple-60);
+    border-color: var(--color-purple-60);
+  }
+  .black & {
+    background-color: var(--color-black-60);
+    border-color: var(--color-black-60);
+  }
+}
+
+.coi-checkbox label {
+  .gray & {
+    background-color: var(--color-gray);
+  }
+  .green & {
+    background-color: var(--color-green);
+  }
+  .yellow & {
+    background-color: var(--color-yellow-60);
+  }
+  .red & {
+    background-color: var(--color-red-60);
+  }
+  .blue & {
+    background-color: var(--color-blue-60);
+  }
+  .purple & {
+    background-color: var(--color-purple-60);
+  }
+  .black & {
+    background-color: var(--color-black-60);
+  }
+}
+
+.coi-checkbox input[type="checkbox"]:checked + label {
+  .gray & {
+    background-color: var(--color-gray);
+  }
+  .green & {
+    background-color: var(--color-green);
+  }
+  .yellow & {
+    background-color: var(--color-yellow-60);
+  }
+  .red & {
+    background-color: var(--color-red-60);
+  }
+  .blue & {
+    background-color: var(--color-blue-60);
+  }
+  .purple & {
+    background-color: var(--color-purple-60);
+  }
+  .black & {
+    background-color: var(--color-black-60);
+  }
+}
+
+.coi-consent-banner__name-container:hover {
+  .gray & {
+    color: var(--color-gray) !important;
+  }
+  .green & {
+    color: var(--color-green) !important;
+  }
+  .yellow & {
+    color: var(--color-yellow-60) !important;
+  }
+  .red & {
+    color: var(--color-red-60) !important;
+  }
+  .blue & {
+    color: var(--color-blue-60) !important;
+  }
+  .purple & {
+    color: var(--color-purple-60) !important;
+  }
+  .black & {
+    color: var(--color-black-60) !important;
+  }
+}
+
+.coi-control-container::scrollbar {
+  .gray & {
+    background-color: var(--color-gray);
+  }
+  .green & {
+    background-color: var(--color-green);
+  }
+  .yellow & {
+    background-color: var(--color-yellow-60);
+  }
+  .red & {
+    background-color: var(--color-red-60);
+  }
+  .blue & {
+    background-color: var(--color-blue-60);
+  }
+  .purple & {
+    background-color: var(--color-purple-60);
+  }
+  .black & {
+    background-color: var(--color-black-60);
+  }
+}
+
+.coi-control-content .coi-control-container::-webkit-scrollbar-thumb {
+  .gray & {
+    background-color: var(--color-gray) !important;
+  }
+  .green & {
+    background-color: var(--color-green) !important;
+  }
+  .yellow & {
+    background-color: var(--color-yellow-60) !important;
+  }
+  .red & {
+    background-color: var(--color-red-60) !important;
+  }
+  .blue & {
+    background-color: var(--color-blue-60) !important;
+  }
+  .purple & {
+    background-color: var(--color-purple-60) !important;
+  }
+  .black & {
+    background-color: var(--color-black-60) !important;
+  }
+}

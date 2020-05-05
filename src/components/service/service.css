@@ -1,0 +1,75 @@
+.service-header {
+  margin-top: calc(var(--padding-site-mobile) * 4);
+  @media (--mq-md) {
+    margin-top: calc(var(--padding-site-desktop) * 4);
+  }
+}
+
+.sectioncolor-green {
+  background-color: var(--color-green-40);
+  &:nth-child(odd) {
+    background-color: var(--color-green-60);
+  }
+}
+.sectioncolor-black {
+  background-color: var(--color-black-40);
+  &:nth-child(odd) {
+    background-color: var(--color-black-60);
+  }
+}
+.sectioncolor-blue {
+  background-color: var(--color-blue-40);
+  &:nth-child(odd) {
+    background-color: var(--color-blue-60);
+  }
+}
+.sectioncolor-brown {
+  background-color: var(--color-brown-40);
+  &:nth-child(odd) {
+    background-color: var(--color-brown-60);
+  }
+}
+.sectioncolor-yellow {
+  background-color: var(--color-yellow-40);
+  &:nth-child(odd) {
+    background-color: var(--color-yellow-60);
+  }
+}
+.sectioncolor-purple {
+  background-color: var(--color-purple-40);
+  &:nth-child(odd) {
+    background-color: var(--color-purple-60);
+  }
+}
+.sectioncolor-red {
+  background-color: var(--color-red-40);
+  &:nth-child(odd) {
+    background-color: var(--color-red-60);
+  }
+}
+.sectioncolor-white {
+  background-color: var(--color-white);
+}
+.sectioncolor-gray {
+  background-color: var(--color-gray);
+}
+
+.offers-list {
+  text-decoration: none;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 2px;
+    width: 0;
+    transition: width 0.15s ease-in;
+    background-color: var(--color-black);
+  }
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+  }
+}

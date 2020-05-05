@@ -1,0 +1,6 @@
+mixin exampleComponent($themeClass)
+  .example-component(data-component="example-component", class=$themeClass)
+    if $themeClass
+      h2 Example Component (#{$themeClass})
+    else
+      h2 Example Component (default)

@@ -1,0 +1,38 @@
+.case-list {
+  padding: var(--margin-site-mobile) 0;
+  @media (--mq-sm) {
+    padding: var(--margin-site-desktop) 0;
+  }
+  .module-image {
+    padding-top: var(--margin-site-mobile);
+    @media (--mq-md) {
+      padding-top: 0;
+    }
+  }
+}
+
+.more-cases {
+  .case-container {
+    height: 0px;
+    overflow: hidden;
+  }
+}
+
+.cases {
+  margin-bottom: var(--margin-site-mobile);
+  @media (--mq-sm) {
+    margin-bottom: var(--margin-site-desktop);
+  }
+  .show-more {
+    text-align: center;
+    margin-top: 78px;
+    .primary-link {
+      span {
+        padding: 10px 70px;
+      }
+    }
+  }
+  .show-more.active {
+    display: none;
+  }
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "id": 101,
+    "name": "Jane Doe",
+    "birthday": "15082000",
+    "gender": "female",
+    "stars": 5
+  },
+  {
+    "id": 101,
+    "name": "Josephine Doe",
+    "birthday": "15082000",
+    "gender": "female",
+    "stars": 4
+  },
+  {
+    "id": 102,
+    "name": "John Doe",
+    "birthday": "15082001",
+    "gender": "male",
+    "stars": 3
+  }
+]

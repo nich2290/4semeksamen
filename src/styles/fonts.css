@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "1508";
+  font-display: block;
+  src: local("1508"),
+    url("/assets/fonts/1508_regular-webfont.woff2") format("woff2"),
+    url("/assets/fonts/1508_regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "1508";
+  font-display: block;
+  src: local("1508"),
+    url("/assets/fonts/1508_bold-webfont.woff2") format("woff2"),
+    url("/assets/fonts/1508_bold-webfont.woff") format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "1508-mono";
+  font-display: block;
+  src: local("1508-mono"),
+    url("/assets/fonts/1508_mono_medium.woff2") format("woff2"),
+    url("/assets/fonts/1508_mono_medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "strom";
+  font-display: block;
+  src: local("strom"),
+    url("/assets/fonts/stromlin_medium-webfont.woff2") format("woff2"),
+    url("/assets/fonts/stromlin_medium-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "strom-mono";
+  font-display: block;
+  src: local("strom-mono"),
+    url("/assets/fonts/stromlin_mono_medium-webfont.woff2") format("woff2"),
+    url("/assets/fonts/stromlin_mono_medium-webfont.woff") format("woff");
+}

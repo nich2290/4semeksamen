@@ -1,0 +1,117 @@
+.create-ticket {
+  margin: var(--margin-site-mobile) 0;
+  @media screen and (min-width: 1024px) {
+    margin-top: var(--margin-site-desktop);
+  }
+  label {
+    color: var(--color-blue);
+    &:not(.radio) {
+      margin-bottom: 15px;
+    }
+  }
+  textarea {
+    border-color: var(--color-blue-60);
+    overflow: auto;
+    min-height: 100px;
+    margin-bottom: 20px;
+  }
+
+  input[type="text"] {
+    border: 1px solid var(--color-blue-60);
+    background: transparent;
+    cursor: pointer;
+    font-size: var(--font-size-body);
+    padding: 10px 0;
+    margin-bottom: 20px;
+    &:focus {
+      //border-bottom: 2px solid var(--color-black);
+      outline: none;
+      &::placeholder {
+        color: transparent;
+      }
+    }
+  }
+  button {
+    width: 100px;
+    cursor: pointer;
+  }
+}
+
+.ticket-form {
+  display: flex;
+  flex-direction: column;
+}
+.ticket-reciept {
+  display: none;
+  &.active {
+    display: flex;
+  }
+}
+
+.create-ticket-step {
+  border-bottom: 1px solid var(--color-blue-60);
+  margin-bottom: 20px;
+}
+
+.ticket-accordian {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.2s ease-in-out;
+}
+
+.ticket-header {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  color: var(--color-blue);
+
+  .active & {
+    span {
+      background-color: var(--color-blue-20);
+    }
+  }
+  span {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid var(--color-blue-60);
+    padding: 12px 0 0 19px;
+    margin-right: 15px;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+.ticket-accordian-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.radio {
+  cursor: pointer;
+  color: var(--color-blue);
+  margin-bottom: 15px;
+  display: block;
+  input {
+    position: relative;
+    margin: 0 20px 0 0;
+    &::before {
+      content: "";
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      border: 1px solid var(--color-blue-60);
+      position: absolute;
+      left: 0px;
+      top: 0;
+      background: var(--color-white);
+    }
+    &:checked::before {
+      content: "\2022";
+      color: var(--color-blue-60);
+      font-size: 39px;
+      line-height: 0.38;
+    }
+  }
+}

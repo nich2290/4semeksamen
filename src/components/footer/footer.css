@@ -1,0 +1,121 @@
+@import "../../styles/variables.css";
+
+footer {
+  background: var(--color-black);
+  color: white;
+  padding: var(--margin-site-mobile) 0;
+  @media (--mq-sm) {
+    padding: var(--margin-site-desktop) 0;
+  }
+
+  .footer-container {
+    opacity: var(--opas);
+    transition: opacity 0.1s linear;
+    will-change: transform;
+  }
+  .footer-section + .footer-section {
+    margin-top: var(--margin-site-mobile);
+    @media (--mq-ipad) {
+      margin-top: 0;
+    }
+  }
+  .footer-section:first-child address a {
+    padding-bottom: 24px;
+    display: block;
+    @media (--mq-ipad) {
+      padding-bottom: 0;
+    }
+  }
+  p,
+  a {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5em;
+    @media (--mq-sm) {
+      margin-bottom: 2em;
+    }
+  }
+  .header {
+    font-size: 20px;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .footer-col {
+    padding-bottom: 2em;
+    @media (--mq-sm) {
+      padding-bottom: 0;
+    }
+  }
+  .lastCol {
+    clear: both;
+    padding-top: 40px;
+    .header {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.social-link {
+  font-size: 0;
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  max-width: 31px;
+  max-height: 31px;
+  margin-right: 9px;
+  transition: max-width 0.3s ease, font-size 0.3s;
+  text-decoration: none;
+  border: 2px solid var(--color-white);
+  border-radius: 20px;
+  &::after {
+    line-height: 27px;
+    display: inline-block;
+    padding-right: 10px;
+    color: var(--color-white);
+  }
+  &.linkedin {
+    &::after {
+      content: "LinkedIn";
+    }
+  }
+  &.facebook {
+    &::after {
+      content: "Facebook";
+    }
+  }
+  &:hover {
+    font-size: 12px;
+    max-width: 150px;
+  }
+  svg {
+    position: relative;
+    top: -3px;
+    left: -2px;
+    display: inline-block;
+    float: left;
+    width: 1.9375rem;
+    height: 1.9375rem;
+    .soCircle {
+      display: none;
+    }
+    .svg2 {
+      fill: none;
+      stroke: var(--color-white);
+      stroke-miterlimit: 10;
+      stroke-width: 2;
+    }
+    .svg4 {
+      fill: var(--color-white);
+      stroke: var(--color-white);
+      stroke-miterlimit: 10;
+      stroke-width: 0.25;
+    }
+    .svg6 {
+      font-size: 14px;
+    }
+  }
+}

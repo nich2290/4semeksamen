@@ -1,0 +1,86 @@
+extends ../templates/layout.pug
+include ../templates/mixins/mixin-example
+include ../components/svg/svg
+include ../components/example-component/example-component
+
+mixin icon($id)
+  .icons(style="margin-bottom: 3rem")
+    +svg($id)
+    small #{$id}
+
+mixin color($hex)
+  .color(style="background: " + $hex + "; width: 100%; height: 100px; padding: .5rem; margin-bottom: 3rem")
+    small(style="color: #555")= $hex
+
+block vars
+  // this 'title' pug-variable is used in layout.pug to set the title of this page.
+  - title='Style guide'
+
+block content
+
+  section
+    .container
+      .row
+        .col-xs-12.col-md-5
+          h1 Colors
+          hr
+        .col-xs-12.col-md-6.col-md-offset-1
+          .row
+            .col-xs-3
+              +color("black")
+            .col-xs-3
+              +color("cyan")
+            .col-xs-3
+              +color("magenta")
+            .col-xs-3
+              +color("yellow")
+
+  section
+    .container
+      .row
+        .col-xs-12.col-md-5
+          h1 Typography
+          hr
+        .col-xs-12.col-md-6.col-md-offset-1
+          h1 H1 header
+          h2 H2 header
+          h3 H3 header
+          h4 H4 header
+          h5 H5 header
+          h6 H6 header
+
+          p Paragraph text. Sed ut <a href="#">perspiciatis unde omnis iste natus</a> error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+          p
+            strong Bold text
+          p
+            em Italic text
+          p
+            small Small text
+          a(href="#") Link
+
+  section
+    .container
+      .row
+        .col-xs-12.col-md-5
+          h1 Icons
+          hr
+        .col-xs-12.col-md-6.col-md-offset-1
+          .row
+            .col-xs-3
+              +icon("arrow-right")
+            .col-xs-3
+              +icon("arrow-left")
+            .col-xs-3
+              +icon("arrow-up")
+            .col-xs-3
+              +icon("arrow-down")
+
+  section
+    .container
+      .row
+        .col-xs-12
+          h1 ExampleComponent
+          hr
+          +exampleComponent()
+          +exampleComponent("theme-green")
+          +exampleComponent("theme-red")

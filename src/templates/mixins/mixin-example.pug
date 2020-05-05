@@ -1,0 +1,10 @@
+mixin article(myParam, attr)
+  article(data-param=attr)
+    p
+      strong Hello from mixin-example.pug
+
+    p #{myParam}
+
+    // block injects child-elements of the mixin:
+    if block
+      block

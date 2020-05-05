@@ -1,0 +1,436 @@
+.hero-bg-index {
+  background-image: url(/assets/images/front.jpg);
+}
+.hero-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &.color-red {
+    background-color: var(--color-red);
+  }
+  &.color-gray {
+    background-color: var(--color-gray);
+  }
+  &.color-blue {
+    background-color: var(--color-blue);
+  }
+  &.color-yellow {
+    background-color: var(--color-yellow);
+  }
+  &.color-purple {
+    background-color: var(--color-purple);
+  }
+  &.color-green {
+    background-color: var(--color-green);
+  }
+  &.color-brown {
+    background-color: var(--color-brown);
+  }
+  &.color-black {
+    background-color: var(--color-black);
+  }
+  &.color-white {
+    background-color: var(--color-white);
+  }
+}
+
+.hero {
+  height: 100vh;
+  .article & {
+    height: 50vh;
+    min-height: 281px;
+  }
+  position: relative;
+  overflow: hidden;
+  .textcolor-blue & {
+    color: var(--color-blue);
+  }
+  .textcolor-white & {
+    color: var(--color-white);
+  }
+  .textcolor-green & {
+    color: var(--color-green);
+  }
+  .textcolor-brown & {
+    color: var(--color-brown);
+  }
+  .textcolor-yellow & {
+    color: var(--color-yellow);
+  }
+  .textcolor-purple & {
+    color: var(--color-purple);
+  }
+  .textcolor-red & {
+    color: var(--color-red);
+  }
+  .textcolor-gray & {
+    color: var(--color-gray);
+  }
+
+  .hero-more {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    animation: pulse 2.5s infinite;
+    font-size: 80px;
+    height: 25px;
+    width: 60px;
+    cursor: pointer;
+    .hero-dot {
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      border-radius: 10px;
+      background-color: var(--color-black);
+      .textcolor-blue & {
+        background-color: var(--color-blue);
+      }
+      .textcolor-white & {
+        background-color: var(--color-white);
+      }
+      .textcolor-green & {
+        background-color: var(--color-green);
+      }
+      .textcolor-brown & {
+        background-color: var(--color-brown);
+      }
+      .textcolor-yellow & {
+        background-color: var(--color-yellow);
+      }
+      .textcolor-purple & {
+        background-color: var(--color-purple);
+      }
+      .textcolor-red & {
+        background-color: var(--color-red);
+      }
+      .textcolor-gray & {
+        background-color: var(--color-gray);
+      }
+    }
+    .hero-dot-one {
+      top: 0;
+      left: 0;
+    }
+    .hero-dot-two {
+      bottom: 0px;
+      left: 25px;
+    }
+    .hero-dot-three {
+      top: 0;
+      right: 0;
+    }
+
+    span {
+      transform: rotate(-90deg);
+      transform-origin: 28px 33px;
+      line-height: 1;
+      display: inline-block;
+      color: var(--color-black-60);
+      .textcolor-blue & {
+        color: var(--color-blue-60);
+      }
+      .textcolor-white & {
+        color: color-mod(var(--color-white) alpha(0.6));
+      }
+      .textcolor-green & {
+        color: var(--color-green-60);
+      }
+      .textcolor-brown & {
+        color: var(--color-brown-60);
+      }
+      .textcolor-yellow & {
+        color: var(--color-yellow-60);
+      }
+      .textcolor-purple & {
+        color: var(--color-purple-60);
+      }
+      .textcolor-red & {
+        color: var(--color-red-60);
+      }
+      .textcolor-gray & {
+        color: color-mod(var(--color-gray) alpha(0.8));
+      }
+    }
+  }
+
+  .container {
+    display: flex;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    opacity: var(--tx);
+    transition: opacity 0.1s linear;
+    will-change: transform;
+  }
+  .hero-cta {
+    position: absolute;
+    top: 15%;
+
+    max-width: 80%;
+
+    .article & {
+      top: 30%;
+    }
+
+    @media (--mq-sm) {
+      top: 31%;
+      max-width: 40%;
+    }
+    h1 {
+      font-size: 45px;
+      font-weight: 400;
+      @media (--mq-sm) {
+        font-size: 60px;
+      }
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    @media (--mq-sm) {
+      max-width: 75%;
+    }
+  }
+
+  .primary-hero {
+    border: 1px solid var(--color-black);
+    .textcolor-blue & {
+      border-color: var(--color-blue);
+    }
+    .textcolor-white & {
+      border-color: var(--color-white);
+    }
+    .textcolor-green & {
+      border-color: var(--color-green);
+    }
+    .textcolor-brown & {
+      border-color: var(--color-brown);
+    }
+    .textcolor-yellow & {
+      border-color: var(--color-yellow);
+    }
+    .textcolor-purple & {
+      border-color: var(--color-purple);
+    }
+    .textcolor-red & {
+      border-color: var(--color-red);
+    }
+    .textcolor-gray & {
+      border-color: var(--color-gray);
+    }
+    position: relative;
+    overflow: hidden;
+
+    transition: color 0.2s ease-in;
+    display: inline-block;
+    margin-bottom: 10px;
+    vertical-align: middle;
+
+    span {
+      padding: 10px 30px;
+      position: relative;
+      z-index: 10;
+      display: inline-block;
+    }
+    /*
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: var(--color-black);
+      .textcolor-blue & {
+        background-color: var(--color-blue);
+      }
+      .textcolor-white & {
+        background-color: var(--color-white);
+      }
+      .textcolor-green & {
+        background-color: var(--color-green);
+      }
+      .textcolor-brown & {
+        background-color: var(--color-brown);
+      }
+      .textcolor-yellow & {
+        background-color: var(--color-yellow);
+      }
+      .textcolor-purple & {
+        background-color: var(--color-purple);
+      }
+      .textcolor-red & {
+        background-color: var(--color-red);
+      }
+      .textcolor-gray & {
+        background-color: var(--color-gray);
+      }
+      transition: width 0.15s ease-in;
+      overflow: hidden;
+    }
+    
+    &:hover {
+      color: #fff;
+      .textcolor-white & {
+        color: var(--color-black);
+      }
+      &::after {
+        width: 100%;
+      }
+    }
+    */
+  }
+
+  .ripple {
+    .textcolor-blue & {
+      background-color: var(--color-blue);
+    }
+    .textcolor-white & {
+      background-color: var(--color-white);
+    }
+    .textcolor-green & {
+      background-color: var(--color-green);
+    }
+    .textcolor-brown & {
+      background-color: var(--color-brown);
+    }
+    .textcolor-yellow & {
+      background-color: var(--color-yellow);
+    }
+    .textcolor-purple & {
+      background-color: var(--color-purple);
+    }
+    .textcolor-red & {
+      background-color: var(--color-red);
+    }
+    .textcolor-gray & {
+      background-color: var(--color-gray);
+    }
+  }
+
+  .secundary-hero {
+    position: relative;
+    display: inline-block;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      height: 2px;
+      width: 0;
+      transition: width 0.15s ease-in;
+      background-color: var(--color-black);
+    }
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+  .hero-separator {
+    margin: 0 10px;
+  }
+
+  .bodymovin {
+    svg {
+      path {
+        .textcolor-blue & {
+          stroke: var(--color-blue);
+          fill: var(--color-blue);
+        }
+        .textcolor-white & {
+          stroke: var(--color-white);
+          fill: var(--color-white);
+        }
+        .textcolor-green & {
+          stroke: var(--color-green);
+          fill: var(--color-green);
+        }
+        .textcolor-brown & {
+          stroke: var(--color-brown);
+          fill: var(--color-brown);
+        }
+        .textcolor-yellow & {
+          stroke: var(--color-yellow);
+          fill: var(--color-yellow);
+        }
+        .textcolor-purple & {
+          stroke: var(--color-purple);
+          fill: var(--color-purple);
+        }
+        .textcolor-red & {
+          stroke: var(--color-red);
+          fill: var(--color-red);
+        }
+        .textcolor-gray & {
+          stroke: var(--color-gray);
+          fill: var(--color-gray);
+        }
+      }
+    }
+  }
+}
+
+/*
+.wave {
+  &::before,
+  &::after {
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+    border: 3px solid var(--color-yellow);
+    //display: none;
+    width: 100%;
+    height: 100%;
+  }
+  &:hover {
+    &::before {
+      display: block;
+      animation: spread-fade 1s ease-in 1;
+    }
+    &::after {
+      display: block;
+      animation: spread-fade 1s 0.2s ease-in 1;
+    }
+  }
+}
+
+@keyframes spread-fade {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.3);
+    opacity: 0;
+  }
+}
+*/
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

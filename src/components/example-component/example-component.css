@@ -1,0 +1,17 @@
+@import "../../styles/variables.css";
+
+.theme-green {
+  &.example-component {
+    color: green;
+  }
+}
+
+.theme-red {
+  &.example-component {
+    color: red;
+  }
+}
+
+.example-component {
+  color: gray;
+}

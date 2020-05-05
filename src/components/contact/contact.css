@@ -1,0 +1,327 @@
+.contact-hero {
+  padding: 80px 0 0;
+  @media (--mq-sm) {
+    padding: 109px var(--padding-site-desktop) 70px;
+  }
+
+  .textcolor-blue & {
+    color: var(--color-blue);
+  }
+  .textcolor-white & {
+    color: var(--color-white);
+  }
+  .textcolor-green & {
+    color: var(--color-green);
+  }
+  .textcolor-brown & {
+    color: var(--color-brown);
+  }
+  .textcolor-yellow & {
+    color: var(--color-yellow);
+  }
+  .textcolor-purple & {
+    color: var(--color-purple);
+  }
+  .textcolor-red & {
+    color: var(--color-red);
+  }
+  .textcolor-gray & {
+    color: var(--color-gray);
+  }
+}
+
+.contact-form {
+  position: relative;
+  height: var(--contact-height);
+  margin-bottom: 0;
+  .form-container {
+    height: 0;
+    overflow: hidden;
+  }
+  a {
+    color: var(--color-black);
+    display: inline-block;
+    font-size: 25px;
+    margin-bottom: 15px;
+    @media (--mq-sm) {
+      font-size: 30px;
+      margin-bottom: 0;
+    }
+    text-decoration: none;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      height: 2px;
+      width: 0;
+      transition: width 0.15s ease-in;
+      background-color: var(--color-black);
+    }
+    &.is-active {
+      color: var(--color-black);
+      &::after {
+        width: 100%;
+      }
+    }
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+  #informal_contactform {
+    font-size: 25px;
+    @media (--mq-ipad) {
+      font-size: 30px;
+    }
+    &.posted {
+      display: none;
+    }
+    @media (--mq-ipad) {
+      font-size: 55px;
+    }
+    p {
+      margin-bottom: 10px;
+      line-height: 35px;
+
+      @media (--mq-ipad) {
+        line-height: 62px;
+      }
+    }
+    input[type="text"] {
+      border: none;
+      background: transparent;
+      font-size: 25px;
+      width: 204px;
+
+      border-bottom: 2px solid transparent;
+      transition: all 0.25s ease-in;
+      cursor: pointer;
+
+      @media (--mq-ipad) {
+        font-size: 40px;
+        width: 484px;
+        line-height: 60px;
+        &::placeholder {
+          font-size: 60px;
+        }
+      }
+
+      &:focus {
+        //border-bottom: 2px solid var(--color-black);
+        outline: none;
+        &::placeholder {
+          color: transparent;
+        }
+      }
+    }
+  }
+  button {
+    font-size: 30px;
+    background-color: transparent;
+    font-family: "1508", ariel;
+    margin-top: var(--margin-site-mobile);
+    @media (--mq-ipad) {
+      margin-top: var(--margin-site-desktop);
+    }
+    margin-bottom: 0;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  #formal_contactform {
+    &.posted {
+      display: none;
+    }
+    .formal-input {
+      display: inline-block;
+      transition: padding 0.2s ease;
+      @media (--mq-ipad) {
+        border: 1px solid var(--color-black);
+        margin-bottom: 15px;
+        width: 100%;
+        position: relative;
+      }
+    }
+    label {
+      font-size: 16px;
+      display: block;
+      transition: all 0.3s ease;
+      @media (--mq-ipad) {
+        font-size: 55px;
+        position: absolute;
+        bottom: 26px;
+        left: 5px;
+        z-index: -1;
+      }
+    }
+    .is-focus {
+      @media (--mq-ipad) {
+        padding-top: 25px;
+      }
+      label {
+        font-size: 16px;
+        display: block;
+        @media (--mq-ipad) {
+          font-size: 18px;
+          top: 0;
+          bottom: auto;
+        }
+      }
+    }
+    input[type="text"] {
+      background: transparent;
+      font-size: 25px;
+      width: 90%;
+      border: 1px solid var(--color-black);
+      margin-bottom: 15px;
+      padding: 5px;
+      @media (--mq-ipad) {
+        font-size: 55px;
+        border: none;
+        margin-bottom: 0px;
+        width: 100%;
+        &::placeholder {
+          color: transparent;
+        }
+      }
+      &:focus {
+        border-bottom: 2px solid var(--color-black);
+        outline: none;
+      }
+    }
+  }
+}
+
+.form-selector {
+  &.posted {
+    display: none;
+  }
+  margin-bottom: var(--margin-site-mobile);
+  @media (--mq-sm) {
+    margin-bottom: var(--margin-site-desktop);
+  }
+  a {
+    position: relative;
+    margin-right: 25px;
+  }
+  .burger-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    position: absolute;
+    background-color: var(--color-black);
+    &.burger-dot-one {
+      top: -45px;
+      left: calc(50% - 5px);
+    }
+    &.burger-dot-two {
+      top: -30px;
+      left: calc(50% - 5px);
+    }
+    &.burger-dot-three {
+      top: -15px;
+      left: calc(50% - 5px);
+    }
+  }
+  .is-active {
+    .burger-dot {
+      &.burger-dot-one {
+        top: -30px;
+        left: calc(50% - 20px);
+        animation: key-dot-one 0.5s 1;
+      }
+      &.burger-dot-two {
+        top: -30px;
+        left: calc(50% - 5px);
+      }
+      &.burger-dot-three {
+        top: -30px;
+        left: calc(50% + 10px);
+        animation: key-dot-three 0.5s 1;
+      }
+    }
+  }
+}
+
+#informal_contactform_reciepttext,
+#formal_contactform_reciepttext {
+  visibility: hidden;
+  font-size: 30px;
+  line-height: 34px;
+  &.posted {
+    visibility: visible;
+  }
+}
+
+.formal-submit:disabled,
+.informal-submit:disabled {
+  cursor: not-allowed;
+  span {
+    opacity: 0.2;
+  }
+}
+
+@keyframes key-dot-one {
+  0% {
+    top: -45px;
+    left: calc(50% - 5px);
+  }
+  50% {
+    top: -30px;
+    left: calc(50% - 5px);
+  }
+  100% {
+    top: -30px;
+    left: calc(50% - 20px);
+  }
+}
+
+@keyframes key-dot-three {
+  0% {
+    top: -15px;
+    left: calc(50% - 5px);
+  }
+  50% {
+    top: -30px;
+    left: calc(50% - 5px);
+  }
+  100% {
+    top: -30px;
+    left: calc(50% + 10px);
+  }
+}
+
+@keyframes key-dot-one-reverse {
+  0% {
+    top: 15px;
+    left: 0px;
+  }
+  50% {
+    top: 15px;
+    left: 15px;
+  }
+  100% {
+    top: 0px;
+    left: 15px;
+  }
+}
+
+@keyframes key-dot-three-reverse {
+  0% {
+    top: 15px;
+    left: 30px;
+  }
+  50% {
+    top: 15px;
+    left: 15px;
+  }
+  100% {
+    top: 30px;
+    left: 15px;
+  }
+}

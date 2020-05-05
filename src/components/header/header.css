@@ -1,0 +1,537 @@
+@import "../../styles/variables.css";
+
+header.text-shading {
+  padding-bottom: 15px;
+  @media (--mq-sm) {
+    padding-bottom: 0;
+  }
+  .textcolor-red & {
+    background-color: color-mod(var(--color-red) alpha(0.4));
+    .logo a,
+    .menuitem .menuitem-link {
+      color: var(--color-black);
+    }
+    .menuitem .menuitem-link::after {
+      background-color: var(--color-black);
+    }
+    .logo-tagline {
+      color: var(--color-black-60);
+    }
+    .burger .burger-dot {
+      background-color: var(--color-black);
+    }
+  }
+  .textcolor-gray & {
+    background-color: color-mod(var(--color-gray) alpha(0.4));
+    .logo a,
+    .menuitem .menuitem-link {
+      color: var(--color-black);
+    }
+    .menuitem .menuitem-link::after {
+      background-color: var(--color-black);
+    }
+    .logo-tagline {
+      color: var(--color-black-60);
+    }
+    .burger .burger-dot {
+      background-color: var(--color-black);
+    }
+  }
+  .textcolor-blue & {
+    background-color: color-mod(var(--color-blue) alpha(0.4));
+    .logo a,
+    .menuitem .menuitem-link {
+      color: var(--color-black);
+    }
+    .menuitem .menuitem-link::after {
+      background-color: var(--color-black);
+    }
+    .logo-tagline {
+      color: var(--color-black-60);
+    }
+    .burger .burger-dot {
+      background-color: var(--color-black);
+    }
+  }
+  .textcolor-yellow & {
+    background-color: color-mod(var(--color-yellow) alpha(0.4));
+    .logo a,
+    .menuitem .menuitem-link {
+      color: var(--color-black);
+    }
+    .menuitem .menuitem-link::after {
+      background-color: var(--color-black);
+    }
+    .logo-tagline {
+      color: var(--color-black-60);
+    }
+    .burger .burger-dot {
+      background-color: var(--color-black);
+    }
+  }
+  .textcolor-purple & {
+    background-color: color-mod(var(--color-purple) alpha(0.4));
+    .logo a,
+    .menuitem .menuitem-link {
+      color: var(--color-black);
+    }
+    .menuitem .menuitem-link::after {
+      background-color: var(--color-black);
+    }
+    .logo-tagline {
+      color: var(--color-black-60);
+    }
+    .burger .burger-dot {
+      background-color: var(--color-black);
+    }
+  }
+  .textcolor-green & {
+    background-color: color-mod(var(--color-green) alpha(0.4));
+    .logo a,
+    .menuitem .menuitem-link {
+      color: var(--color-black);
+    }
+    .menuitem .menuitem-link::after {
+      background-color: var(--color-black);
+    }
+    .logo-tagline {
+      color: var(--color-black-60);
+    }
+    .burger .burger-dot {
+      background-color: var(--color-black);
+    }
+  }
+  .textcolor-brown & {
+    background-color: color-mod(var(--color-brown) alpha(0.4));
+    .logo a,
+    .menuitem .menuitem-link {
+      color: var(--color-black);
+    }
+    .menuitem .menuitem-link::after {
+      background-color: var(--color-black);
+    }
+    .logo-tagline {
+      color: var(--color-black-60);
+    }
+    .burger .burger-dot {
+      background-color: var(--color-black);
+    }
+  }
+  .textcolor-black & {
+    background-color: color-mod(var(--color-black) alpha(0.4));
+    .logo a,
+    .menuitem .menuitem-link {
+      color: var(--color-white);
+    }
+    .menuitem .menuitem-link::after {
+      background-color: var(--color-white);
+    }
+    .logo-tagline {
+      color: color-mod(var(--color-white) alpha(0.6));
+    }
+    .burger .burger-dot {
+      background-color: var(--color-white);
+    }
+    .menu {
+      background-color: var(--color-black);
+      @media (--mq-sm) {
+        background-color: transparent;
+      }
+    }
+  }
+  .textcolor-white & {
+    background-color: color-mod(var(--color-white) alpha(0.65));
+    .logo a,
+    .menuitem .menuitem-link {
+      color: var(--color-black);
+    }
+    .menuitem .menuitem-link::after,
+    .burger .burger-dot {
+      background-color: var(--color-black);
+    }
+    .logo-tagline {
+      color: var(--color-black-60);
+    }
+  }
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+
+  .container {
+    margin: 0 auto;
+  }
+
+  .logo {
+    float: left;
+    margin-top: 16px;
+    font-size: 26px;
+    line-height: 40px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+    &.active {
+      opacity: 1;
+    }
+    a {
+      margin-right: 1em;
+      height: 20px;
+      width: auto;
+      text-decoration: none;
+      span {
+        vertical-align: super;
+        font-size: 12px;
+      }
+      .textcolor-blue & {
+        color: var(--color-blue);
+      }
+      .textcolor-white & {
+        color: var(--color-white);
+      }
+      .textcolor-green & {
+        color: var(--color-green);
+      }
+      .textcolor-brown & {
+        color: var(--color-brown);
+      }
+      .textcolor-yellow & {
+        color: var(--color-yellow);
+      }
+      .textcolor-purple & {
+        color: var(--color-purple);
+      }
+      .textcolor-red & {
+        color: var(--color-red);
+      }
+      .textcolor-gray & {
+        color: var(--color-gray);
+      }
+    }
+  }
+
+  .logo-tagline {
+    font-size: 15px;
+    line-height: 40px;
+    color: var(--color-black-60);
+    white-space: nowrap;
+    .textcolor-blue & {
+      color: var(--color-blue-60);
+    }
+    .textcolor-white & {
+      color: color-mod(var(--color-white) alpha(0.4));
+    }
+    .textcolor-green & {
+      color: var(--color-green-60);
+    }
+    .textcolor-brown & {
+      color: var(--color-brown-60);
+    }
+    .textcolor-yellow & {
+      color: var(--color-yellow-60);
+    }
+    .textcolor-purple & {
+      color: var(--color-purple-60);
+    }
+    .textcolor-red & {
+      color: var(--color-red-60);
+    }
+    .textcolor-gray & {
+      color: color-mod(var(--color-gray) alpha(0.4));
+    }
+  }
+}
+
+.burger {
+  display: inline-block;
+  position: absolute;
+  right: 16px;
+  top: 20px;
+  z-index: 1000;
+  @media (--mq-md) {
+    display: none;
+  }
+  a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+  }
+  .burger-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    position: absolute;
+    &.burger-dot-one {
+      top: 0;
+      left: 15px;
+      //transition: all 0.3s ease;
+    }
+    &.burger-dot-two {
+      top: 15px;
+      left: 15px;
+    }
+    &.burger-dot-three {
+      top: 30px;
+      left: 15px;
+      //transition: all 0.3s ease;
+    }
+    .active-menu & {
+      &.burger-dot-one {
+        top: 15px;
+        left: 0px;
+        animation: key-dot-menu-one 0.5s 1;
+      }
+      &.burger-dot-two {
+        top: 15px;
+        left: 15px;
+      }
+      &.burger-dot-three {
+        top: 15px;
+        left: 30px;
+        animation: key-dot-menu-three 0.5s 1;
+      }
+    }
+    .inactive-menu & {
+      &.burger-dot-one {
+        top: 0px;
+        left: 15px;
+        animation: key-dot-menu-one-reverse 0.5s 1;
+      }
+      &.burger-dot-two {
+        top: 15px;
+        left: 15px;
+      }
+      &.burger-dot-three {
+        top: 30px;
+        left: 15px;
+        animation: key-dot-menu-three-reverse 0.5s 1;
+      }
+    }
+    background-color: var(--color-black);
+    .textcolor-blue & {
+      background-color: var(--color-blue);
+    }
+    .textcolor-white & {
+      background-color: var(--color-white);
+    }
+    .textcolor-green & {
+      background-color: var(--color-green);
+    }
+    .textcolor-brown & {
+      background-color: var(--color-brown);
+    }
+    .textcolor-yellow & {
+      background-color: var(--color-yellow);
+    }
+    .textcolor-purple & {
+      background-color: var(--color-purple);
+    }
+    .textcolor-red & {
+      background-color: var(--color-red);
+    }
+    .textcolor-gray & {
+      background-color: var(--color-gray);
+    }
+    /* .active-menu.textcolor-white & {
+      background-color: var(--color-black);
+    } */
+  }
+}
+
+.menu {
+  position: fixed;
+  right: 0%;
+  width: 0;
+  background: #fff;
+  height: 100%;
+  top: 0;
+  overflow: hidden;
+  transition: width 0.3s ease-in;
+  padding: 80px 0;
+  background-color: var(--color-gray);
+  font-size: 30px;
+  line-height: 58px;
+  .textcolor-white & {
+    background-color: var(--color-black);
+  }
+
+  &.active {
+    width: 100vw;
+    z-index: 100;
+  }
+  @media (--mq-md) {
+    font-size: 18px;
+    line-height: var(--font-lineheight-body: calc(4em / 3));
+    background-color: transparent;
+    top: 28px;
+    position: relative;
+    width: auto;
+    height: auto;
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    right: 0;
+    .textcolor-white & {
+      background-color: transparent;
+    }
+  }
+}
+
+.menuitem {
+  list-style: none;
+  margin-left: var(--padding-site-mobile);
+  @media (--mq-md) {
+    display: inline-block;
+    margin-left: 36px;
+    &::first-child {
+      margin-left: 0;
+    }
+  }
+
+  .menuitem-link {
+    text-decoration: none;
+    position: relative;
+    font-size: 28px;
+    @media (--mq-md) {
+      font-size: 14px;
+    }
+    .textcolor-blue & {
+      color: var(--color-blue);
+    }
+    .textcolor-white & {
+      color: var(--color-white);
+    }
+    .textcolor-green & {
+      color: var(--color-green);
+    }
+    .textcolor-brown & {
+      color: var(--color-brown);
+    }
+    .textcolor-yellow & {
+      color: var(--color-yellow);
+    }
+    .textcolor-purple & {
+      color: var(--color-purple);
+    }
+    .textcolor-red & {
+      color: var(--color-red);
+    }
+    .textcolor-gray & {
+      color: var(--color-gray);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      height: 2px;
+      width: 0;
+      transition: width 0.15s ease-in;
+      background-color: var(--color-black);
+      .textcolor-blue & {
+        background-color: var(--color-blue);
+      }
+      .textcolor-white & {
+        background-color: var(--color-white);
+      }
+      .textcolor-green & {
+        background-color: var(--color-green);
+      }
+      .textcolor-brown & {
+        background-color: var(--color-brown);
+      }
+      .textcolor-yellow & {
+        background-color: var(--color-yellow);
+      }
+      .textcolor-purple & {
+        background-color: var(--color-purple);
+      }
+      .textcolor-red & {
+        background-color: var(--color-red);
+      }
+      .textcolor-gray & {
+        background-color: var(--color-gray);
+      }
+    }
+    /* .white.textcolor-white & {
+      color: var(--color-black);
+      @media (--mq-md) {
+        color: var(--color-white);
+      }
+    } */
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+    &.active {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@keyframes key-dot-menu-one {
+  0% {
+    top: 0px;
+    left: 15px;
+  }
+  50% {
+    top: 15px;
+    left: 15px;
+  }
+  100% {
+    top: 15px;
+    left: 0px;
+  }
+}
+
+@keyframes key-dot-menu-three {
+  0% {
+    top: 30px;
+    left: 15px;
+  }
+  50% {
+    top: 15px;
+    left: 15px;
+  }
+  100% {
+    top: 15px;
+    left: 30px;
+  }
+}
+
+@keyframes key-dot-menu-one-reverse {
+  0% {
+    top: 15px;
+    left: 0px;
+  }
+  50% {
+    top: 15px;
+    left: 15px;
+  }
+  100% {
+    top: 0px;
+    left: 15px;
+  }
+}
+
+@keyframes key-dot-menu-three-reverse {
+  0% {
+    top: 15px;
+    left: 30px;
+  }
+  50% {
+    top: 15px;
+    left: 15px;
+  }
+  100% {
+    top: 30px;
+    left: 15px;
+  }
+}

@@ -1,0 +1,35 @@
+doctype html
+html(lang="da", data-component="app")
+  block vars
+
+  head
+    title #{title} | 1508
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width,initial-scale=1")
+    meta(name="description", content="Some description...")
+    meta(name="keywords", content="")
+
+    link(rel="preload", type="font/woff2", href="/assets/fonts/1508.woff2", as="font", crossorigin)
+    link(rel='stylesheet', type='text/css', href='https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css')
+    link(rel="canonical", href="https://stroemlin.dk")
+
+    include partials/meta-some
+    include partials/icons
+
+    block head
+
+    block scripts
+
+  body
+
+    include partials/svg-map
+
+    .site-wrapper
+      include ../components/header/header
+
+      main
+        block content
+        include ../components/footer/footer
+          block footer
+
+    include partials/scripts
