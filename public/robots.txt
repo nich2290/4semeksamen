@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+Sitemap: https://1508.dk/sitemap.xml
