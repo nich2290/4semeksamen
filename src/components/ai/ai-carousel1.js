@@ -6,6 +6,7 @@ export default class AiCarousel {
   }
 
   init() {
+    console.log("glide init");
     var glide = new Glide(".glide", {
       gap: 0
     });
