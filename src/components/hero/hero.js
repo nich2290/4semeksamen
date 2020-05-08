@@ -17,7 +17,7 @@ export default class Hero {
 
     const myImg = document.querySelector(".hero");
 
-    const title = document.querySelector(".hero-cta");
+    const title = document.querySelector(".hero-ctapa");
     const speed = 0.1;
     title.style.transform =
       "translateY( calc( var(--scrollparallax) * -1px ) )";

@@ -8,10 +8,15 @@ html(lang="da", data-component="app")
     meta(name="viewport", content="width=device-width,initial-scale=1")
     meta(name="description", content="Some description...")
     meta(name="keywords", content="")
-
+    script(src="https://cdn.jsdelivr.net/npm/@glidejs/glide")
     link(rel="preload", type="font/woff2", href="/assets/fonts/1508.woff2", as="font", crossorigin)
     link(rel='stylesheet', type='text/css', href='https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css')
     link(rel="canonical", href="https://stroemlin.dk")
+    
+    
+
+    
+    
 
     include partials/meta-some
     include partials/icons
@@ -20,7 +25,7 @@ html(lang="da", data-component="app")
 
     block scripts
 
-  body
+  body(class= bodyClass ? bodyClass : '')
 
     include partials/svg-map
 

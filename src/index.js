@@ -30,6 +30,7 @@ import ContactForm from "./components/contact/contact";
 import InformalContact from "./components/contact/informalcontact";
 import FormalContact from "./components/contact/formalcontact";
 import CreateTicket from "./components/create-ticket/create-ticket";
+import AiCarousel from "./components/ai/ai-carousel1";
 
 const components = [
   { Class: App, selectorName: "app" },
@@ -50,7 +51,8 @@ const components = [
   { Class: ContactForm, selectorName: "contactform" },
   { Class: InformalContact, selectorName: "informalContact" },
   { Class: FormalContact, selectorName: "formalContact" },
-  { Class: CreateTicket, selectorName: "create-ticket" }
+  { Class: CreateTicket, selectorName: "create-ticket" },
+  { Class: AiCarousel, selectorName: "ai-carousel" }
 ];
 
 /*

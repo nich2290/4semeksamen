@@ -22,3 +22,7 @@
 @import "components/icon/icon.css";
 @import "components/cookie/cookie.css";
 @import "components/create-ticket/create-ticket.css";
+@import "components/hero/svg-ani.css";
+@import "components/ai/ai.css";
+@import "components/ai/glide.css";
+@import "components/ai/glide-core.css";
