@@ -1,0 +1,22 @@
+.fixednav {
+  position: fixed;
+  background-color: var(--color-white);
+  top: 0;
+  @media screen and (min-width: 1024px) {
+    background-color: transparent;
+  }
+  ul {
+    list-style-type: none;
+  }
+  li {
+    @media screen and (min-width: 1024px) {
+      display: inline-block;
+      margin-left: 36px;
+    }
+  }
+  .mobilenavhead {
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
+  }
+}

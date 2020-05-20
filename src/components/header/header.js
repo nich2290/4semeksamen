@@ -4,11 +4,14 @@ export default class Header {
   constructor(element) {
     this.el = element;
     this.onMenuClick = this.onMenuClick.bind(this);
-
+    this.openTech = this.openTech.bind(this);
     this.init();
   }
 
   init() {
+    this.mobiletech = this.el.querySelector(".mobile");
+    this.techlink = this.el.querySelector(".techlink");
+    this.nav2 = this.el.querySelector(".menu2");
     this.burger = this.el.querySelector(".burger-link");
     this.menu = this.el.querySelector(".menu");
     this.logo = this.el.querySelector(".logo");
@@ -16,6 +19,7 @@ export default class Header {
     this.topElement = document.querySelector("body");
     this.htmlElement = document.querySelector("html");
     this.burger.addEventListener("click", event => this.onMenuClick(event));
+    this.techlink.addEventListener("click", event => this.openTech());
 
     if (this.logoText) {
       let logoTextContent = this.logoText.innerHTML;
@@ -24,7 +28,17 @@ export default class Header {
       this.logo.classList.add("active");
     }
   }
-
+  openTech() {
+    if (this.techlink.classList.contains("active-tech")) {
+      this.nav2.classList.remove("techshow");
+      this.techlink.classList.remove("active-tech");
+      this.mobiletech.classList.remove("mobile-active");
+    } else {
+      this.nav2.classList.add("techshow");
+      this.techlink.classList.add("active-tech");
+      this.mobiletech.classList.add("mobile-active");
+    }
+  }
   onMenuClick(event) {
     event.preventDefault();
     if (this.topElement.classList.contains("active-menu")) {

@@ -26,3 +26,6 @@
 @import "components/ai/ai.css";
 @import "components/ai/glide.css";
 @import "components/ai/glide-core.css";
+@import "components/ai/ai-toggle.css";
+@import "components/ai-contact/ai-contact.css";
+@import "components/fixednav/fixednav.css";

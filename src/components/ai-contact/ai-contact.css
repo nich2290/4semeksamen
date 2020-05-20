@@ -1,0 +1,141 @@
+.ai-contact {
+  position: relative;
+  height: var(--contact-height);
+  margin-bottom: 0;
+  .form-container {
+    height: 0;
+    overflow: hidden;
+  }
+  a {
+    color: var(--color-white);
+    display: inline-block;
+    font-size: 25px;
+    margin-bottom: 15px;
+    @media (--mq-sm) {
+      font-size: 30px;
+      margin-bottom: 0;
+    }
+    text-decoration: none;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      height: 2px;
+      width: 0;
+      transition: width 0.15s ease-in;
+      background-color: var(--color-white);
+    }
+    &.is-active {
+      color: var(--color-white);
+      &::after {
+        width: 100%;
+      }
+    }
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  p {
+    color: var(--color-white);
+  }
+  #informal_contactform input[type="text"]::placeholder {
+    color: #c4c4c4;
+  }
+}
+.ai-contact {
+  padding-top: 50px;
+  min-height: 640px;
+  @media screen and (min-width: 768px) {
+    min-height: 1000px;
+  }
+  @media screen and (min-width: 1024px) {
+    padding-top: 100px;
+    min-height: 850px;
+  }
+  background-color: #587087;
+  .form-formal {
+    .formalnamr {
+      z-index: 1;
+    }
+  }
+  .formal-input {
+    @media screen and (min-width: 768px) {
+      background-color: #c4c4c4;
+    }
+  }
+  #formal_contactform label {
+    z-index: 100;
+    color: var(--color-white);
+  }
+  #formal_contactform input[type="text"] {
+    background-color: #c4c4c4;
+  }
+  #formal_contactform input::placeholder {
+    color: white;
+  }
+  .form-container {
+  }
+  .formal-submit {
+    background-color: #c4c4c4;
+  }
+}
+.contactpersons {
+  background-color: rgba(72, 112, 137, 0.06);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @media screen and (min-width: 1024px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .portrait-left-container {
+    background-image: url("/assets/images/peter.jpg");
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    @media screen and (min-width: 1024px) {
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+    }
+    @media screen and (min-width: 1400px) {
+      width: 317px;
+      height: 322px;
+      border-radius: 200px;
+    }
+  }
+  .portrait-right-container {
+    background-image: url("/assets/images/anton.jpg");
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-top: 40px;
+    @media screen and (min-width: 768px) {
+      margin-top: 0;
+    }
+    @media screen and (min-width: 1024px) {
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+    }
+    @media screen and (min-width: 1400px) {
+      width: 317px;
+      height: 322px;
+      border-radius: 200px;
+    }
+  }
+  .nametag {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 0.1rem;
+  }
+  .phone {
+    margin-bottom: 0;
+  }
+}

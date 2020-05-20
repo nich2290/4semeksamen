@@ -31,6 +31,10 @@ import InformalContact from "./components/contact/informalcontact";
 import FormalContact from "./components/contact/formalcontact";
 import CreateTicket from "./components/create-ticket/create-ticket";
 import AiCarousel from "./components/ai/ai-carousel1";
+import AiTypes from "./components/ai/ai-types-carousel";
+import ToggleModule from "./components/ai/ai-toggle";
+import BodyMovin2 from "./components/bodymovin/bodymovin2";
+import BodyMovin3 from "./components/bodymovin/bodymovin3";
 
 const components = [
   { Class: App, selectorName: "app" },
@@ -52,7 +56,11 @@ const components = [
   { Class: InformalContact, selectorName: "informalContact" },
   { Class: FormalContact, selectorName: "formalContact" },
   { Class: CreateTicket, selectorName: "create-ticket" },
-  { Class: AiCarousel, selectorName: "ai-carousel" }
+  { Class: AiCarousel, selectorName: "ai-carousel" },
+  { Class: AiTypes, selectorName: "ai-types" },
+  { Class: ToggleModule, selectorName: "ai-toggle" },
+  { Class: BodyMovin2, selectorName: "bodymovin2" },
+  { Class: BodyMovin3, selectorName: "bodymovin3" }
 ];
 
 /*

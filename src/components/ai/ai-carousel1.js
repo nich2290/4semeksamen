@@ -7,9 +7,13 @@ export default class AiCarousel {
 
   init() {
     console.log("glide init");
-    var glide = new Glide(".glide", {
-      gap: 0
+    const carousels = document.querySelectorAll(".carousels");
+
+    Object.values(carousels).map(carousel => {
+      const slider = new Glide(carousel, {
+        startAt: 0
+      });
+      slider.mount();
     });
-    glide.mount();
   }
 }

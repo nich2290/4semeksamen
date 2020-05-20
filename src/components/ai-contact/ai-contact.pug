@@ -1,0 +1,85 @@
+section.container.contactpersons
+    .row
+        .col-xs-12.col-md-6 
+            h2 Contact
+    .row
+        .col-xs-12.col-sm-4.col-sm-offset-2.col-md-3.col-md-offset-3
+            .portrait-left-container
+            p.nametag Peter Marius Stampe
+            p.role Commercial Strategy Lead
+            p.phone +45 23 44 89 84
+            a.mail(href="mailto: Peter@stromlin.dk") Peter@stromlin.dk
+        .col-xs-12.col-sm-4.col-md-3
+            .portrait-right-container
+            p.nametag Anton Stonor
+            p.role CTO & partner
+            p.phone Telefon nr.
+            a.mail(href="mailto: anton@stromlin.dk") Anton@stromlin.dk
+section.container.contact-form.ai-contact(data-component="contactform")
+    .row
+        .col-lg-8.col-lg-offset-2
+            .form-selector
+                a(data-form="informal").formlink.formlink-informal.is-active Download
+                a(data-form="formal").formlink.formlink-formal Formal
+        .col-lg-9.col-lg-offset-2
+            .form-container.form-informal(data-component="formalContact")
+                p Fill out this form and retrieve a white paper with more details on the subject.
+                form#informal_contactform.informal-contactform
+                    input(type="hidden" value="info@headnet.dk" id="formalinmail")
+                    input(type="hidden" value="Henvendelse via den uformelleformular" id="formalemailsubject")
+                    input(type="hidden" value="Informal" id="formtype")
+                    <p> My name is <input type="text" autocomplete="on" name="formalname" id="formalname" placeholder="Your name" data-inputname></p>
+                    <p>I am <input type="text" autocomplete="on" name="formalrole" id="formalrole" placeholder="A Digital Manager" data-ionputrole>and i want to hear more about <input type="text" autocomplete="on" name="formaltopic" id="formaltopic" placeholder="Machine Learning" data-inputtopic></p>
+                    <p>I work at <input type="text" autocomplete="on" name="formalcompany" id="formalcompany" placeholder="Company name"></p>
+                    
+                    <p>My e-mail is <input type="text" autocomplete="on" name="formalemail" id="formalemail" placeholder="your E-mail" data-inputemail></p>
+                    button(type="submit" id="informalformbutton" data-component="primary" disabled).primary-link.informal-submit 
+                        span Send materials   
+                .form-reply#informal_contactform_reciepttext
+                    p Great, thanks!
+                    p We will contact youo soon <br> but if you can't wait, feel free to call <br> Our CEO Morten Brandt:
+                    p +45 4084 0300 <br> <a href="mailto:morten@stormlin.dk">morten@stormlin.dk</a>
+            .form-container.form-formal(data-component="informalContact")
+                p Fill out this form if you wish to set up a meeting with one of our experts.
+                form#formal_contactform.formal-contactform
+                    input(type="hidden" value="info@headnet.dk" id="formalinmail")
+                    input(type="hidden" value="Henvendelse via den formelleformular" id="formalemailsubject")
+                    input(type="hidden" value="Formal" id="formtype")
+                    .formal-input
+                        label(for="formalnamr") Name
+                        input(type="text" autocomplete="on" name="formalname" id="formalname" placeholder="Name" class="informalInput" data-inputname)
+                    .formal-input
+                        label(for="formalrole") Role
+                        input(type="text" autocomplete="on" name="formalrole" id="formalrole" placeholder="Role" class="informalInput" data-inputrole)
+                    .formal-input
+                        label(for="formaltopic") Topic
+                        input(type="text" autocomplete="on" name="formaltopic" id="formaltopic" placeholder="Topic" class="informalInput" data-inputtopic)
+                    .formal-input
+                        label(for="formalemail") E-mail
+                        input(type="text" autocomplete="on" name="formalemail" id="formalemail" placeholder="Email" class="informalInput" data-inputemail)
+                    button#formalformbutton.primary-link.formal-submit(data-component="primary" disabled)
+                        span Request a meeting
+                .form-reply#formal_contactform_reciepttext
+//- section.container.contact-form.ai-contact
+//-     .row
+//-         .col-lg-9.col-lg-offset-2
+//-             .form-container.form-formal(data-component="informalContact")
+//-                 form#formal_contactform.formal-contactform
+//-                     input(type="hidden" value="info@headnet.dk" id="formalinmail")
+//-                     input(type="hidden" value="Henvendelse via den formelleformular" id="formalemailsubject")
+//-                     input(type="hidden" value="Formal" id="formtype")
+//-                     .formal-input
+//-                         label(for="formalnamr") Name
+//-                         input(type="text" autocomplete="on" name="formalname" id="formalname" placeholder="Name" class="informalInput" data-inputname)
+//-                     .formal-input
+//-                         label(for="formalrole") Role
+//-                         input(type="text" autocomplete="on" name="formalrole" id="formalrole" placeholder="Role" class="informalInput" data-inputrole)
+//-                     .formal-input
+//-                         label(for="formaltopic") Topic
+//-                         input(type="text" autocomplete="on" name="formaltopic" id="formaltopic" placeholder="Topic" class="informalInput" data-inputtopic)
+//-                     .formal-input
+//-                         label(for="formalemail") E-mail
+//-                         input(type="text" autocomplete="on" name="formalemail" id="formalemail" placeholder="Email" class="informalInput" data-inputemail)
+//-                     button#formalformbutton.primary-link.formal-submit(data-component="primary" disabled)
+//-                         span Request a meeting
+                

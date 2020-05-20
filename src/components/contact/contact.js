@@ -62,11 +62,12 @@ export default class ContactForm {
 
     //this.el.style.height = this.maxheight + "px";
     if (this.informalLink.classList.contains("is-active")) {
-      this.informalFormContainer.style.height = this.informalHeight + "px";
+      this.informalFormContainer.style.height =
+        this.informalHeight + 100 + "px";
     }
     if (this.formalLink.classList.contains("is-active")) {
       this.formalFormContainer.style.height =
-        this.formalHeight + this.formalSpacing + "px";
+        this.formalHeight + this.formalSpacing + 100 + "px";
     }
   }
 
@@ -93,7 +94,7 @@ export default class ContactForm {
           height: 0
         }).add({
           targets: this.formalFormContainer,
-          height: this.formalHeight + this.formalSpacing
+          height: this.formalHeight + this.formalSpacing + 100
         });
       } else {
         fl.add({
@@ -101,7 +102,7 @@ export default class ContactForm {
           height: 0
         }).add({
           targets: this.informalFormContainer,
-          height: this.informalHeight
+          height: this.informalHeight + 200
         });
       }
     }
@@ -120,19 +121,16 @@ export default class ContactForm {
       contact: form.querySelector("#formtype").value
     };
 
-	$.ajax({
-		type: "POST",
-        data: data,
-        url: "/umbraco/api/formapi/ContactFormSubmit",
-        success: function (response) {
-        },
-        error: function (response) {
-		}
+    $.ajax({
+      type: "POST",
+      data: data,
+      url: "/umbraco/api/formapi/ContactFormSubmit",
+      success: function(response) {},
+      error: function(response) {}
     });
-	 
-	  
+
     //this.postAjax(postUrl, data, function(data) {
-      //console.log(data);
+    //console.log(data);
     //});
 
     this.informalForm.classList.add("posted");
@@ -170,5 +168,4 @@ export default class ContactForm {
     xhr.send(params);
     return xhr;
   }
-
 }
