@@ -5,7 +5,10 @@
   background-color: #587086;
 }
 .ai-hero {
-  background-image: url(/assets/images/technology.jpg);
+  background-image: url(/assets/images/technology_minmin.jpg);
+}
+.hero-bg-dev {
+  background-color: #f0b556;
 }
 .white {
   color: var(--color-white);
@@ -499,4 +502,9 @@
   transform: translate3d(0, 0, 0);
   text-align: center;
   opacity: 1;
+}
+.ai-hero {
+  .col-md-6 {
+    padding: 0;
+  }
 }

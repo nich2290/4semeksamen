@@ -35,7 +35,7 @@ export default class Module {
               direct: true,
               props: {
                 "--mx": {
-                  from: "-10px",
+                  from: "-20px",
                   to: "0px"
                 }
               }
@@ -44,7 +44,7 @@ export default class Module {
             instance.start();
           }
         } else {
-          //entry.target.classList.remove("module-inview");
+          entry.target.classList.remove("module-inview");
         }
       });
     }, config);

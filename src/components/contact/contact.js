@@ -138,11 +138,6 @@ export default class ContactForm {
     this.informalReply.classList.add("posted");
     this.formalReply.classList.add("posted");
     this.formSelector.classList.add("posted");
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth"
-    });
   }
 
   postAjax(url, data, success) {
