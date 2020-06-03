@@ -4,15 +4,15 @@
 
 .container-fluid {
   width: 100%;
-  padding-left: var(--padding-site-mobile);
-  padding-right: var(--padding-site-mobile);
-
+  padding: 0;
   @media (--mq-md) {
-    padding-left: var(--padding-site-desktop);
-    padding-right: var(--padding-site-desktop);
   }
 }
-
+.container-nopadding {
+  max-width: var(--content-max-width);
+  width: 100%;
+  margin: 0 auto;
+}
 .container {
   max-width: var(--content-max-width);
   width: 100%;

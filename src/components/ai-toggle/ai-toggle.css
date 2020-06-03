@@ -2,14 +2,20 @@
   position: relative;
 
   @media screen and (max-width: 375px) {
-    height: 75vh;
+    height: 85vh;
   }
 
   @media screen and (min-width: 414px) {
     height: 70vh;
   }
+  @media screen and (min-width: 667px) {
+    height: 120vh;
+  }
   @media screen and (min-width: 736px) {
-    height: 30vh;
+    height: 100vh;
+  }
+  @media screen and (min-width: 768px) {
+    height: 40vh;
   }
 
   .theme {
@@ -38,33 +44,32 @@
   }
 }
 
-.image-holder {
+.toggle-container {
   position: relative;
-  min-width: 350px;
-  min-height: 375px;
   margin-bottom: 60px;
   @media screen and (min-width: 768px) {
-    min-width: 500px;
-    min-height: 500px;
+    max-width: 600px;
     margin-bottom: 0;
   }
   @media screen and (min-width: 1024px) {
-    min-width: 450px;
-    min-height: 450px;
+    max-width: none;
     width: 450px;
     height: 450px;
-    margin-bottom: 140px;
   }
   @media screen and (min-width: 1400px) {
+    max-width: none;
     width: 600px;
     height: 600px;
   }
 
   svg {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    @media screen and (min-width: 414px) {
+    }
     @media screen and (min-width: 667px) {
       width: 50%;
-      margin: 0 auto;
-      display: block;
     }
     @media screen and (min-width: 736px) {
       width: 60%;
@@ -100,153 +105,149 @@
   }
 }
 .interactive-ai {
-  bottom: 230px;
-  right: 70px;
+  bottom: 170px;
+  right: 75px;
 
   @media screen and (min-width: 414px) {
-    bottom: 250px;
-    right: 75px;
+    bottom: 190px;
+    right: 90px;
   }
   @media screen and (min-width: 667px) {
     bottom: 210px;
     right: 212px;
   }
   @media screen and (min-width: 736px) {
-    bottom: 160px;
-    right: 190px;
+    bottom: 280px;
+    right: 225px;
   }
   @media screen and (min-width: 768px) {
-    bottom: 290px;
-    right: 240px;
+    bottom: 240px;
+    right: 190px;
   }
   @media screen and (min-width: 1024px) {
-    bottom: 95px;
+    bottom: 195px;
     right: 128px;
   }
   @media screen and (min-width: 1400px) {
-    bottom: 145px;
-    right: 180px;
+    bottom: 255px;
+    right: 185px;
   }
 }
 .text-ai {
-  @media screen and (max-width: 414px) {
-    top: 160px;
-    right: 155px;
-  }
+  top: 30px;
+  right: 153px;
+
   @media screen and (min-width: 414px) {
-    top: 170px;
+    top: 30px;
     right: 170px;
   }
   @media screen and (min-width: 667px) {
-    top: 140px;
-    left: 300px;
+    top: 45px;
+    left: 295px;
   }
 
   @media screen and (min-width: 736px) {
-    top: 120px;
-    left: 260px;
+    top: 60px;
+    left: 325px;
   }
   @media screen and (min-width: 768px) {
-    top: 165px;
-    left: 340px;
+    top: 50px;
+    left: 275px;
   }
 
   @media screen and (min-width: 1024px) {
-    top: 140px;
+    top: 40px;
     left: 200px;
   }
   @media screen and (min-width: 1400px) {
-    top: 170px;
+    top: 60px;
     left: 275px;
   }
 }
 .visual-ai {
-  @media screen and (max-width: 413px) {
-    top: 250px;
-    right: 40px;
-  }
+  top: 100px;
+  right: 60px;
+
   @media screen and (min-width: 414px) {
-    bottom: 405px;
-    right: 45px;
+    top: 110px;
+    right: 70px;
   }
   @media screen and (min-width: 667px) {
-    bottom: 345px;
+    top: 130px;
     right: 190px;
   }
   @media screen and (min-width: 736px) {
-    bottom: 210px;
-    right: 200px;
+    top: 170px;
+    right: 195px;
   }
   @media screen and (min-width: 768px) {
-    bottom: 480px;
-    right: 205px;
+    top: 150px;
+    right: 165px;
   }
   @media screen and (min-width: 1024px) {
-    bottom: 215px;
+    top: 115px;
     right: 110px;
   }
   @media screen and (min-width: 1400px) {
-    bottom: 310px;
-    right: 150px;
+    top: 160px;
+    right: 155px;
   }
 }
 .analytic-ai {
-  @media screen and (max-width: 414px) {
-    top: 250px;
-    right: 255px;
-  }
+  bottom: 280px;
+  left: 52px;
+
   @media screen and (min-width: 414px) {
-    bottom: 260px;
-    right: 275px;
+    bottom: 180px;
+    left: 90px;
   }
   @media screen and (min-width: 667px) {
     bottom: 195px;
     left: 212px;
   }
   @media screen and (min-width: 736px) {
-    bottom: 140px;
-    left: 220px;
+    bottom: 260px;
+    left: 225px;
   }
   @media screen and (min-width: 768px) {
-    bottom: 280px;
-    left: 235px;
+    bottom: 225px;
+    left: 190px;
   }
   @media screen and (min-width: 1024px) {
-    bottom: 80px;
+    bottom: 175px;
     left: 128px;
   }
   @media screen and (min-width: 1400px) {
-    bottom: 125px;
+    bottom: 245px;
     left: 180px;
   }
 }
 .functional-ai {
-  @media screen and (max-width: 414px) {
-    top: 420px;
-    right: 210px;
-  }
+  top: 225px;
+  left: 70px;
+
   @media screen and (min-width: 414px) {
-    top: 440px;
-    right: 230px;
+    top: 115px;
+    left: 53px;
   }
   @media screen and (min-width: 667px) {
-    top: 225px;
+    top: 125px;
     left: 175px;
   }
   @media screen and (min-width: 736px) {
-    top: 160px;
-    left: 170px;
+    top: 170px;
+    left: 175px;
   }
   @media screen and (min-width: 768px) {
-    top: 280px;
-    left: 183px;
+    top: 150px;
+    left: 145px;
   }
   @media screen and (min-width: 1024px) {
-    top: 210px;
+    top: 115px;
     left: 92px;
   }
   @media screen and (min-width: 1400px) {
-    top: 270px;
+    top: 160px;
     left: 135px;
   }
 }
