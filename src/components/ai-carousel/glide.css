@@ -106,12 +106,14 @@
 .ai-more {
   position: relative;
 }
-.slide1 {
-  transition: transform 0.4s ease;
-}
+
 .slide1-left:hover .ai-dot {
-  background-color: green;
+  transform: translateX(-10px);
+  background-color: #c4c4c4;
+}
+.slide1-right:hover .ai-dot {
   transform: translateX(10px);
+  background-color: #c4c4c4;
 }
 .ai-dot {
   width: 10px;
@@ -119,6 +121,7 @@
   position: absolute;
   border-radius: 10px;
   background-color: var(--color-black);
+  transition: transform 0.4s ease-in;
 }
 .ai-dot-one-left {
   top: 20px;
@@ -143,4 +146,6 @@
 .ai-dot-three-right {
   top: -20px;
   left: 0;
+}
+.ai-more {
 }

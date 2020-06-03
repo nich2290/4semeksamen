@@ -1,26 +1,28 @@
-const webpack = require('webpack')
-const paths = require('./paths')
-const merge = require('webpack-merge')
-const common = require('./webpack.config.common.js')
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin")
-
+const webpack = require("webpack");
+const paths = require("./paths");
+const merge = require("webpack-merge");
+const common = require("./webpack.config.common.js");
+const UglifyJSPlugin = require("uglifyjs-webpack-plugin");
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = merge(common, {
-  mode: 'production',
+  mode: "production",
   output: {
     path: paths.build,
-    filename: './assets/js/[name].js'
+    filename: "./assets/js/[name].js"
   },
   optimization: {
-    minimizer: [
-      new OptimizeCSSAssetsPlugin({})
-    ]
+    minimizer: [new OptimizeCSSAssetsPlugin({})]
   },
   plugins: [
-    new UglifyJSPlugin({
-      sourceMap: true
+    new TerserPlugin({
+      parallel: true,
+      terserOptions: {
+        ecma: 6
+      }
     }),
-    new webpack.HashedModuleIdsPlugin(),
+
+    new webpack.HashedModuleIdsPlugin()
   ]
-})
+});

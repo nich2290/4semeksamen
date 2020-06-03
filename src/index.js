@@ -30,9 +30,9 @@ import ContactForm from "./components/contact/contact";
 import InformalContact from "./components/contact/informalcontact";
 import FormalContact from "./components/contact/formalcontact";
 import CreateTicket from "./components/create-ticket/create-ticket";
-import AiCarousel from "./components/ai/ai-carousel1";
-import AiTypes from "./components/ai/ai-types-carousel";
-import ToggleModule from "./components/ai/ai-toggle";
+import AiCarousel from "./components/ai-carousel/ai-carousel1";
+import AiTypes from "./components/ai-types/ai-types-carousel";
+import ToggleModule from "./components/ai-toggle/ai-toggle";
 import BodyMovin2 from "./components/bodymovin/bodymovin2";
 import BodyMovin3 from "./components/bodymovin/bodymovin3";
 

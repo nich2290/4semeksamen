@@ -85,7 +85,6 @@
   transition: 0.4s ease-in;
 
   @media screen and (max-width: 414px) {
-    background-color: rgba(255, 255, 255, 0.557);
     height: 40px;
   }
 

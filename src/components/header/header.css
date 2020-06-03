@@ -475,6 +475,93 @@ header {
     }
   }
 }
+.menuitem2 {
+  list-style: none;
+  margin-left: -17px;
+
+  .menuitem-link {
+    text-decoration: none;
+    position: relative;
+    font-size: 28px;
+    @media (--mq-md) {
+      font-size: 14px;
+    }
+    .textcolor-blue & {
+      color: var(--color-blue);
+    }
+    .textcolor-white & {
+      color: var(--color-white);
+    }
+    .textcolor-green & {
+      color: var(--color-green);
+    }
+    .textcolor-brown & {
+      color: var(--color-brown);
+    }
+    .textcolor-yellow & {
+      color: var(--color-yellow);
+    }
+    .textcolor-purple & {
+      color: var(--color-purple);
+    }
+    .textcolor-red & {
+      color: var(--color-red);
+    }
+    .textcolor-gray & {
+      color: var(--color-gray);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      height: 2px;
+      width: 0;
+      transition: width 0.15s ease-in;
+      background-color: var(--color-black);
+      .textcolor-blue & {
+        background-color: var(--color-blue);
+      }
+      .textcolor-white & {
+        background-color: var(--color-white);
+      }
+      .textcolor-green & {
+        background-color: var(--color-green);
+      }
+      .textcolor-brown & {
+        background-color: var(--color-brown);
+      }
+      .textcolor-yellow & {
+        background-color: var(--color-yellow);
+      }
+      .textcolor-purple & {
+        background-color: var(--color-purple);
+      }
+      .textcolor-red & {
+        background-color: var(--color-red);
+      }
+      .textcolor-gray & {
+        background-color: var(--color-gray);
+      }
+    }
+    /* .white.textcolor-white & {
+      color: var(--color-black);
+      @media (--mq-md) {
+        color: var(--color-white);
+      }
+    } */
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+    &.active {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}
 
 @keyframes key-dot-menu-one {
   0% {
@@ -552,6 +639,7 @@ header {
 }
 .techlink {
   cursor: pointer;
+  list-style-type: none;
 }
 .techshow {
   @media screen and (min-width: 1024px) {
