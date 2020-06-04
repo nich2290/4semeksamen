@@ -17,9 +17,11 @@ export default class BodyMovin3 {
       container: this.anim1,
       renderer: "svg",
       loop: false,
+      className: "svgsizing",
       autoplay: false /*MAKE SURE THIS IS FALSE*/,
       rendererSettings: {
-        progressiveLoad: false
+        progressiveLoad: false,
+        viewBoxOnly: true
       },
       path: this.bodyPath,
       name: "myAnimation"

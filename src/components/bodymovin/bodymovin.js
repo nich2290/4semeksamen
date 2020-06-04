@@ -19,7 +19,8 @@ export default class BodyMovin {
       loop: false,
       autoplay: false /*MAKE SURE THIS IS FALSE*/,
       rendererSettings: {
-        progressiveLoad: false
+        progressiveLoad: false,
+        viewBoxOnly: true
       },
       path: this.bodyPath,
       name: "myAnimation"

@@ -45,6 +45,31 @@
   #informal_contactform input[type="text"]::placeholder {
     color: #c4c4c4;
   }
+  #informal_contactform input[type="text"] {
+    color: var(--color-white);
+  }
+  #informal_contactform {
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:active,
+    input:-webkit-autofill:focus {
+      background-color: #587088 !important;
+      color: var(--color-white) !important;
+      -webkit-box-shadow: 0 0 0 1000px #587088 inset !important;
+      -webkit-text-fill-color: var(--color-white) !important;
+    }
+  }
+  #formal_contactform {
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:active,
+    input:-webkit-autofill:focus {
+      background-color: white !important;
+      color: #c4c4c4 !important;
+      -webkit-box-shadow: 0 0 0 1000px white inset !important;
+      -webkit-text-fill-color: #c4c4c4 !important;
+    }
+  }
 }
 .ai-contact {
   padding-top: 50px;

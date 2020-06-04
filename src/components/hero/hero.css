@@ -6,6 +6,19 @@
 }
 .ai-hero {
   background-image: url(/assets/images/technology_minmin.jpg);
+
+  svg {
+    width: 400px;
+    height: 400px;
+    max-width: 400px;
+    display: none;
+
+    @media screen and (min-width: 1024px) {
+      display: block;
+      width: 400px;
+      height: 400px;
+    }
+  }
 }
 .hero-bg-dev {
   background-color: #f0b556;
@@ -215,11 +228,6 @@
     top: 15%;
     @media (--mq-sm) {
       top: 25%;
-    }
-
-    svg {
-      width: 100%;
-      height: 100%;
     }
   }
   .hero-cta {

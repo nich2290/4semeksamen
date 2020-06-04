@@ -32,10 +32,22 @@
 }
 #view2 {
   svg {
-    width: 50%;
-    height: 80%;
+    width: 339px;
+    height: 339px;
     display: block;
     margin: 0 auto;
+    @media screen and (min-width: 768px) {
+      width: 400px;
+      height: 400px;
+    }
+    @media screen and (min-width: 1024px) {
+      width: 300px;
+      height: 300px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 400px;
+      height: 400px;
+    }
   }
   .image-container1 {
     @media screen and (min-width: 768px) {
@@ -48,8 +60,23 @@
 }
 #view3 {
   svg {
-    width: 80%;
-    height: 80%;
+    width: 339px;
+    height: 339px;
+    display: block;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+      width: 400px;
+      height: 400px;
+    }
+    @media screen and (min-width: 1024px) {
+      width: 300px;
+      height: 300px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 400px;
+      height: 400px;
+    }
   }
   .image-container2 {
     @media screen and (min-width: 768px) {

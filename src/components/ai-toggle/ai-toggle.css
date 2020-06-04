@@ -135,11 +135,11 @@
 }
 .text-ai {
   top: 30px;
-  right: 153px;
+  left: 148px;
 
   @media screen and (min-width: 414px) {
     top: 30px;
-    right: 170px;
+    left: 168px;
   }
   @media screen and (min-width: 667px) {
     top: 45px;

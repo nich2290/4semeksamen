@@ -1,9 +1,6 @@
 @import "../../styles/variables.css";
 
 svg {
-  width: 25px;
-  height: 25px;
-
   stroke: none;
 }
 
